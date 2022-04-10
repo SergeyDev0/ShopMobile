@@ -27,12 +27,6 @@ btnPrice256.addEventListener('click', function(){
     memory = '256GB';
     return [localStorage.setItem('memory', memory), localStorage.setItem('LastPrice', priceLast)];
 });
-btnPrice512.addEventListener('click', function(){
-    price.textContent = startPriceNum + price512;
-    let priceLast = startPriceNum + price512;
-    memory = '512GB';
-    return [localStorage.setItem('memory', memory), localStorage.setItem('LastPrice', priceLast)];
-});
 // Цвет
 let green = document.querySelector('.color-green');
 let pink = document.querySelector('.color-pink');
@@ -83,5 +77,6 @@ let memory = localStorage.getItem('memory');
 let priceBasket = document.querySelector('.price-quality-basket');
 let LastPrice = localStorage.getItem('LastPrice');
 priceBasket.textContent = LastPrice;
+console.log(nameObj, memory, color)
 document.querySelector('.basket__product-name').textContent = nameObj + ' ' + memory + ' ' + color;
 }

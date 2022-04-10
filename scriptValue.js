@@ -8,7 +8,7 @@ let btnPrice512 = document.querySelector('.price-button512');
 let btnAdd = document.querySelector('.btn-addBasket');
 let colorNew;
 // Берём основную цену
-if(window.location.pathname == '/Apple%20iPhone%2013%20Pro%20Max%205G%20Dual%20eSIM%201TB%206GB%20RAM%20Silver,%20The%20best%20price%20in%20EU.html'){
+if(window.location.pathname == '/index.html'){
 let startPrice = price.textContent = 799;
 let startPriceNum = Number(startPrice);
 let nameObject = document.querySelector('.product-name').textContent;

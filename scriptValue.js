@@ -8,7 +8,7 @@ let btnPrice512 = document.querySelector('.price-button512');
 let btnAdd = document.querySelector('.btn-addBasket');
 let colorNew;
 // Берём основную цену
-if(window.location.pathname == '/index.html'){
+if(window.location.pathname !== '/bigPhone.html'){
 let startPrice = price.textContent = 799;
 let startPriceNum = Number(startPrice);
 let nameObject = document.querySelector('.product-name').textContent;
